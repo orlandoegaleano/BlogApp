@@ -3,7 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import React from 'react';
 import { Text, StyleSheet, View, Button, FlatList } from 'react-native';
 import IndexScreen from './src/screens/IndexScreen';
-import {BlogProvider} from './src/context/BlogContext';
+import { Provider as BlogProvider } from './src/context/BlogContext';
 
 
 const navigator = createStackNavigator ({
