@@ -3,16 +3,12 @@ import { Text, StyleSheet, View, Button, FlatList, TouchableOpacity } from 'reac
 import { Context } from '../context/BlogContext';
 import {Feather} from '@expo/vector-icons';
 
-
-
-
 const IndexScreen = (props) => {
 
-    const {state, addBlogPost, deleteBlogPost} = useContext(Context); 
+    const {state, deleteBlogPost} = useContext(Context); 
 
     return(
-        <View>
-            <Text>Hello from IndexScreen</Text>            
+        <View>           
             <FlatList
                 data={state}
                 keyExtractor={(blogPost) => {return blogPost.title}}
